@@ -1,8 +1,8 @@
 -- set absolute number for current line, relative numbers for all other lines
 vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.rnu = true
 
--- no swapfile creation, no backup files
+-- creation of swapfiles and backup files
 vim.opt.swapfile = false
 vim.opt.backup = false
 
@@ -10,4 +10,6 @@ vim.opt.backup = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
+
+-- vim.opt.updatetime = 750

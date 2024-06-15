@@ -1,3 +1,16 @@
+require("cg.init")
+require("cg.packer")
 require("cg.remap")
 require("cg.set")
+
 vim.api.nvim_exec ('language en_US', true)
+
+require("after.plugin.autopairs")
+require("after.plugin.colors")
+require("after.plugin.fugitive")
+require("after.plugin.harpoon")
+require("after.plugin.lualine")
+require("after.plugin.nvim-cmp")
+require("after.plugin.telescope")
+require("after.plugin.treesitter")
+require("after.plugin.undotree")
