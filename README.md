@@ -3,6 +3,8 @@
 ## My Neovim journey
 I started my neovim config by following along [ThePrimeagen's video](https://youtu.be/w7i4amO_zaE?feature=shared), except for the LSP config he suggests. That one seems a little outdated after only one year. That's how fast Neovim best practices move forward. From there on I looked for plugins I liked and tried those. I'll keep this repo updated, so you can always find the status quo of my neovim config here.
 
-I try to keep my Neovim config as lean as possible. I don't like to add dozens of plugins to Neovim. Then I could just as well use VS Code. ;-)
+## My Neovim approach
 
-A very helpful resource is the ["Getting started with Neovim"](https://linovox.com/getting-started-with-neovim/) series by Linovox.
+I try to keep my Neovim config as lean as possible. I don't like to add dozens of plugins to Neovim. Then I could just as well use a JetBrains IDE like IntelliJ. ;-)
+
+A very helpful resource I consulted frequently is the ["Getting started with Neovim"](https://linovox.com/getting-started-with-neovim/) series by Linovox.
