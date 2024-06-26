@@ -5,6 +5,6 @@ I started my neovim config by following along [ThePrimeagen's video](https://you
 
 ## My Neovim approach
 
-I try to keep my Neovim config as lean as possible. I don't like to add dozens of plugins to Neovim. Then I could just as well use a JetBrains IDE like IntelliJ. ;-)
+I try to keep my Neovim config as lean as possible. I don't like to add dozens of plugins to Neovim. Then I could just as well use a JetBrains IDE. ;-)
 
 A very helpful resource I consulted frequently is the ["Getting started with Neovim"](https://linovox.com/getting-started-with-neovim/) series by Linovox.
