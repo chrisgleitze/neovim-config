@@ -3,7 +3,7 @@ require("cg.packer")
 require("cg.remap")
 require("cg.set")
 
-vim.api.nvim_exec ('language en_US', true)
+vim.api.nvim_exec("language en_US", true)
 
 require("cg.lsp.lspconfig")
 require("cg.lsp.lspsaga")

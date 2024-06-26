@@ -13,3 +13,11 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 10
 
 -- vim.opt.updatetime = 750
+
+-- highlight yanked text for 400ms using the "Visual" highlight group
+vim.cmd([[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=400})
+augroup END
+]])
