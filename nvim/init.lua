@@ -5,9 +5,9 @@ require("cg.set")
 
 vim.api.nvim_exec("language en_US", true)
 
+require("cg.lsp.mason")
 require("cg.lsp.lspconfig")
 require("cg.lsp.lspsaga")
-require("cg.lsp.mason")
 require("cg.lsp.null-ls")
 
 require("after.plugin.autopairs")
