@@ -56,7 +56,11 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-path") -- source for file system paths
 
 	-- snippets
-	use("L3MON4D3/LuaSnip") -- snippet engine
+	use({
+		"L3MON4D3/LuaSnip",
+		tag = "v2.3.*",
+		run = "make install_jsregexp",
+	}) -- snippet engine
 	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 	use("rafamadriz/friendly-snippets") -- useful snippets
 
