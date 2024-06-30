@@ -1,32 +1,33 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+vim.cmd([[packadd packer.nvim]])
 
-return require('packer').startup(function(use)
+return require("packer").startup(function(use)
 	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+	use("wbthomason/packer.nvim")
 
 	-- neovim theme
 	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
+		"rose-pine/neovim",
+		as = "rose-pine",
 		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
+			vim.cmd("colorscheme rose-pine")
+		end,
 	})
 
 	-- navigation
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.6',
+	use({
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.6",
 		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
-	use {
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+	use({
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
-		requires = { {"nvim-lua/plenary.nvim"} }
-	}
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
 
 	-- treesitter configuration
 	use({
@@ -36,18 +37,18 @@ return require('packer').startup(function(use)
 			ts_update()
 		end,
 	})
-	use('nvim-treesitter/playground') 
-	use "nvim-lua/plenary.nvim"
-	use('mbbill/undotree')
+	use("nvim-treesitter/playground")
+	use("nvim-lua/plenary.nvim")
+	use("mbbill/undotree")
 
 	-- git
-	use('tpope/vim-fugitive')
+	use("tpope/vim-fugitive")
 
 	-- statusline
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-	}
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
@@ -85,4 +86,7 @@ return require('packer').startup(function(use)
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+	-- multi cursor
+	use({ "mg979/vim-visual-multi", branch = "master" })
 end)
