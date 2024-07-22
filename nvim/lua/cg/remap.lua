@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
--- exit file
+-- exit buffer back to netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- helps you change all occurrences of the word the cursor is on
