@@ -1,3 +1,6 @@
+-- hidden buffers are not displayed but loaded in memory
+vim.opt.hidden = true
+
 -- set absolute number for current line, relative numbers for all other lines
 vim.opt.nu = true
 vim.opt.rnu = true
