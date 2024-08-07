@@ -8,3 +8,8 @@ I started my neovim config by following along [ThePrimeagen's video](https://you
 I try to keep my Neovim config as lean as possible. I don't like to add dozens of plugins to Neovim. Then I could just as well use a JetBrains IDE. ;-)
 
 A very helpful resource I consulted frequently is the ["Getting started with Neovim"](https://linovox.com/getting-started-with-neovim/) series by Linovox.
+
+## Lesson learned
+
+Update, July 2024: I now use ["Lazyvim"](https://www.lazyvim.org/), a Neovim distro (distribution). Why? Because I ran into too many issues that took me too long to solve.
+Lesson: Better use a Neovim distro first to learn the tool. Then if you understood it well enough, you can write your own config.
