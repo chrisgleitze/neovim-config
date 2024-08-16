@@ -11,5 +11,5 @@ A very helpful resource I consulted frequently is the ["Getting started with Neo
 
 ## Lesson learned
 
-Update, July 2024: I now use ["Lazyvim"](https://www.lazyvim.org/), a Neovim distro (distribution). Why? Because I ran into too many issues that took me too long to solve.
+Update, July 2024: I now use [Lazyvim](https://www.lazyvim.org/), a Neovim distro (distribution). Why? Because I ran into too many issues that took me too long to solve.
 Lesson: Better use a Neovim distro first to learn the tool. Then if you understood it well enough, you can write your own config.
