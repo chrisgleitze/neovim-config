@@ -20,3 +20,5 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 12
+
+vim.opt.guicursor = { "n-v-ve-o-r-c-cr-sm:block-blinkon175", "i-ci:ver25-blinkon175" }
