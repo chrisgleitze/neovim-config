@@ -5,6 +5,14 @@
 -- exit buffer back to netrw
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+--jump up and down a page and center cursor
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- center next and previous search results
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 -- moves highlighted lines up (K) or down (J)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
