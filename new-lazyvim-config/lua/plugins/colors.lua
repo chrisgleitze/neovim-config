@@ -1,12 +1,27 @@
 return {
-  -- add colorscheme
-  { "rose-pine/neovim" },
+  {
+    "rebelot/kanagawa.nvim",
+    opts = {
+      lazy = false,
+      priority = 1000,
+      undercurl = true,
+      terminalColors = true,
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none",
+            },
+          },
+        },
+      },
+    },
+  },
 
-  -- Configure LazyVim to load rose-pine
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "kanagawa-dragon",
     },
   },
 }

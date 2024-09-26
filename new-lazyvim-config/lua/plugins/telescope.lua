@@ -1,29 +1,26 @@
 return {
   "nvim-telescope/telescope.nvim",
-
   tag = "0.1.5",
 
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
 
-  -- config = function()
-  --   require("telescope").setup({})
-  --
-  --   local builtin = require("telescope.builtin")
-  --   -- vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
-  --   vim.keymap.set("n", "<C-p>", builtin.git_files, {})
-  --   vim.keymap.set("n", "<leader>pws", function()
-  --     local word = vim.fn.expand("<cword>")
-  --     builtin.grep_string({ search = word })
-  --   end)
-  --   vim.keymap.set("n", "<leader>pWs", function()
-  --     local word = vim.fn.expand("<cWORD>")
-  --     builtin.grep_string({ search = word })
-  --   end)
-  --   vim.keymap.set("n", "<leader>ps", function()
-  --     builtin.grep_string({ search = vim.fn.input("Grep > ") })
-  --   end)
-  --   vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
-  -- end,
+  opts = function()
+    local actions = require("telescope.actions")
+    return {
+      defaults = {
+        mappings = {
+          i = {
+            ["<C-j>"] = actions.cycle_history_next,
+            ["<C-k>"] = actions.cycle_history_prev,
+            -- ["<C-j>"] = actions.preview_scrolling_down,
+            -- ["<C-k>"] = actions.preview_scrolling_up,
+            ["<S-k>"] = actions.move_selection_previous,
+            ["<S-j>"] = actions.move_selection_next,
+          },
+        },
+      },
+    }
+  end,
 }
